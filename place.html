@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Azuwuigne Kizito" />
+  <meta name="description" content="Explore Nigeria's culture, weather, and geography on this Country Page project for WDD131, created by Azuwuigne Kizito.">
+  <title>Nigeria | Country Page</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+    <picture>
+      <source srcset="images/lagos-large.webp" media="(min-width: 700px)">
+      <img src="images/lagos-small.webp" alt="A view of Lagos, Nigeria" class="hero-img" width="1600" height="900">
+  </picture>
+
+      <div class="info-boxes">
+        <div class="data-box">
+          <h2>Data</h2>
+          <p><strong>Capital:</strong> Abuja</p>
+          <p><strong>Population:</strong> Over 200 million</p>
+          <p><strong>Area:</strong> 923,768 km²</p>
+          <p><strong>Language:</strong> English</p>
+          <p><strong>Currency:</strong> Nigerian Naira (NGN)</p>
+        </div>
+
+        <div class="weather-box">
+          <h2>Weather</h2>
+          <img src="images/cloud-fill(1).svg" alt="Cloud icon" class="weather-icon">
+          <p><strong>Temperature:</strong> <span id="temperature">30</span>°C</p>
+          <p><strong>Wind Speed:</strong> <span id="windSpeed">15</span> km/h</p>
+          <p><strong>Condition:</strong> Partly Cloudy</p>
+          <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Azuwuigne Kizito | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
