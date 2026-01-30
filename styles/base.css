@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #004b8d;
+  color: wheat;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#course-title {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid wheat;
+  padding-bottom: 4px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  border-radius: 4px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.7rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: wheat;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Main Section */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* ✅ Changed from .introcard to .card */
+.card {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004b8d;
+  color: wheat;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+footer a {
+  color: wheat;
+  text-decoration: underline;
+}
+.footer-links a {
+  color: wheat;
+  text-decoration: underline;
+  margin: 0 5px;
+  font-size: 0.9rem;
+}
+.footer-links a:hover {
+  color: white;
+}
