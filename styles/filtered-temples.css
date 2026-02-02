@@ -114,12 +114,6 @@ figcaption {
   font-weight: bold;
 }
 
-figcaption {
-  margin-top: 0.5rem;
-  color: var(--primary);
-  font-weight: bold;
-}
-
 /* FOOTER */
 footer {
   background-color: var(--primary);
