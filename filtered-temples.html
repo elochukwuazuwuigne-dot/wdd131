@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Azuwuigne Kizito" />
+  <meta name="description" content="A responsive picture album showcasing temples around the world created for WDD131 by Azuwuigne Kizito.">
+  <title>Temple Album | WDD131</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <!-- JS -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <nav>
+      <button id="menu" aria-label="Menu">☰</button>
+      <div class="navigation">
+        <a href="index.html">Home</a>
+        <a href="#" data-filter="old">Old</a>
+        <a href="#" data-filter="new">New</a>
+        <a href="#" data-filter="large">Large</a>
+        <a href="#" data-filter="small">Small</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Temples Around the World</h2>
+    <section class="album" id="templeAlbum">
+      <!-- Temple cards will be generated here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Azuwuigne Kizito | WDD 131</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
