@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem auto;
+  max-width: 600px;
+  padding: 1rem;
+  background-color: #0a0a0a;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+label, legend {
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
+p{
+    color: antiquewhite;
+    font-size: 20px;
+
+}
+
+input[type="submit"] {
+  background-color: orangered;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0073E6;
+}
