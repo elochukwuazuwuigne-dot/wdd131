@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review!</h1>
+  </header>
+  <main>
+    <p>Your product review has been submitted successfully.</p>
+    <p id="reviewCounter"></p>
+  </main>
+  <footer>
+    <p>&copy; 2026 | Product Review | WDD131</p>
+  </footer>
+  <script>
+    // Review counter using localStorage
+    let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+    reviewCount++;
+    localStorage.setItem("reviewCount", reviewCount);
+    document.getElementById("reviewCounter").textContent = `Total reviews submitted: ${reviewCount}`;
+  </script>
+</body>
+</html>
