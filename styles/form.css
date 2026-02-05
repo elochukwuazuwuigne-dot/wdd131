@@ -4,6 +4,7 @@ body {
   max-width: 600px;
   padding: 1rem;
   background-color: #0a0a0a;
+  color: #222;
 }
 
 header, footer {
@@ -29,10 +30,10 @@ label, legend {
 span {
   color: red;
 }
-p{
-    color: antiquewhite;
-    font-size: 20px;
 
+p{
+  color: aquamarine;
+  font-size: 20px;
 }
 
 input[type="submit"] {
@@ -46,4 +47,13 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #0073E6;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 0.5rem;
+  }
+  input[type="submit"] {
+    width: 100%;
+  }
 }
